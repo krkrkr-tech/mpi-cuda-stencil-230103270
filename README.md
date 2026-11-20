@@ -1,1 +1,1 @@
-# mpi-cuda-stencil--krkrkr-tech-
+# mpi-cuda-stencil-krkrkr-tech
