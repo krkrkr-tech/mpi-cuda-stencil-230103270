@@ -1,0 +1,92 @@
+{
+  "verification_passed": true,
+  "context": {
+    "git_username": "krkrkr-tech",
+    "instance_seed": 12925014752967932080,
+    "logical_cores": 16,
+    "cpu_signature": "AMD64::AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD::16",
+    "cache_line_bytes": 64,
+    "affinity_api": "SetThreadAffinityMask"
+  },
+  "results": {
+    "iterations_per_thread": 60000000,
+    "num_threads": 4,
+    "stride_benchmarks": [
+      {
+        "stride": 1,
+        "elapsed_ns": 1062816000,
+        "ns_per_update": 4.4284,
+        "final_values": [
+          60000000,
+          60000000,
+          60000000,
+          60000000
+        ],
+        "voluntary_context_switches": 0,
+        "involuntary_context_switches": 0,
+        "threads_pinned": 0
+      },
+      {
+        "stride": 4,
+        "elapsed_ns": 2046700,
+        "ns_per_update": 0.008527916666666666,
+        "final_values": [
+          60000000,
+          60000000,
+          60000000,
+          60000000
+        ],
+        "voluntary_context_switches": 0,
+        "involuntary_context_switches": 0,
+        "threads_pinned": 0
+      },
+      {
+        "stride": 8,
+        "elapsed_ns": 1845000,
+        "ns_per_update": 0.0076875,
+        "final_values": [
+          60000000,
+          60000000,
+          60000000,
+          60000000
+        ],
+        "voluntary_context_switches": 0,
+        "involuntary_context_switches": 0,
+        "threads_pinned": 0
+      },
+      {
+        "stride": 16,
+        "elapsed_ns": 1676400,
+        "ns_per_update": 0.006985,
+        "final_values": [
+          60000000,
+          60000000,
+          60000000,
+          60000000
+        ],
+        "voluntary_context_switches": 0,
+        "involuntary_context_switches": 0,
+        "threads_pinned": 0
+      }
+    ],
+    "private_baseline": {
+      "stride": null,
+      "elapsed_ns": 249016000,
+      "ns_per_update": 1.0375666666666667,
+      "final_values": [
+        60000000,
+        60000000,
+        60000000,
+        60000000
+      ],
+      "voluntary_context_switches": 0,
+      "involuntary_context_switches": 0,
+      "threads_pinned": 0
+    }
+  },
+  "audit": {
+    "llvm_signature": "(Array(uint64, 1, 'C', False, aligned=True), int64, int64, uint64)",
+    "llvm_contains_i64_store": true,
+    "llvm_contains_python_object_fallback": false
+  }
+}
